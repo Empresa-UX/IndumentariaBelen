@@ -1,0 +1,272 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 1.5rem 0;
+    border-bottom: 2px solid #ddd; /* Borde sutil */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header .logo img {
+    max-height: 70px;
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: #333; /* Gris oscuro */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s;
+}
+
+header .menu ul li a:hover {
+    color: #89c66a; /* Verde para hover */
+}
+
+header .user-cart {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .user-cart input {
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+header .user-cart input:focus {
+    border-color: #89c66a;
+}
+
+header .user-cart img {
+    max-height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+header .user-cart img:hover {
+    transform: scale(1.1);
+}
+
+/* Sección de productos */
+#productos {
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+}
+
+#productos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.producto {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.producto img:hover {
+    transform: scale(1.05);
+}
+
+.producto h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.producto p {
+    font-size: 1.1rem;
+    color: #89c66a;
+    margin-bottom: 1rem;
+}
+
+.producto button {
+    background-color: #d10000;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.1rem;
+}
+
+.producto button:hover {
+    background-color: #b20000;
+}
+
+/* Producto con imágenes múltiples */
+.producto-imagenes {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.producto-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; /* Inicialmente invisibles */
+    transition: opacity 1.5s ease, transform 1.5s ease-in-out; /* Transición más lenta */
+}
+
+/* La primera imagen es visible por defecto */
+.producto-imagen:nth-child(1) {
+    opacity: 1;
+    z-index: 3; /* Asegura que la primera imagen esté encima */
+}
+
+/* Al pasar el mouse sobre las imágenes */
+.producto-imagenes:hover .producto-imagen:nth-child(1) {
+    opacity: 0;
+    transform: scale(1.05);
+    z-index: 1; /* La primera imagen se mueve debajo */
+}
+
+.producto-imagenes:hover .producto-imagen:nth-child(2) {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 3; /* La segunda imagen aparece encima */
+}
+
+.producto-imagenes:hover .producto-imagen:nth-child(3) {
+    opacity: 0;
+    transform: scale(1.05);
+    z-index: 1; /* La tercera imagen se mueve debajo */
+}
+
+/* Sección de Ofertas Especiales */
+#ofertas-especiales {
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+}
+
+#ofertas-especiales h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.ofertas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.95);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
