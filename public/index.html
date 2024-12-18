@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Online</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/home.js"></script>
 </head>
 
 <!-- WhatsApp Button -->
 <a href="https://wa.me/+5491130693312" class="whatsapp-button" target="_blank" title="Contáctanos por WhatsApp">
     <img src="images/logos/whatsapp.png" alt="WhatsApp">
 </a>
-
 <body>
 
     
     <header>
         <div class="container">
             <div class="logo">
+                <img src="/images/header/categorias.png" alt="categorias">
+                <img src="/images/header/configuracion.png" alt="configuracion">
                 <img src="logo.png" alt="Logo de la tienda">
             </div>
             <nav class="menu">
@@ -30,9 +31,13 @@
                 </ul>
             </nav>
             <div class="user-cart">
-                <input type="text" placeholder="Buscar productos">
-                <img src="cart-icon.png" alt="Carrito de compras">
-            </div>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar..." />
+                    <img src="/images/header/lupa.png" alt="Buscar" class="search-icon" onclick="toggleSearch()" />
+                </div>
+                <img src="/images/header/hogar.png" alt="hogar">
+                <img src="/images/header/notificacion.png" alt="notificacion">
+            </div>            
         </div>
     </header>
 
@@ -120,5 +125,4 @@
         <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
     </footer>
 </body>
-
 </html>

@@ -7,9 +7,11 @@
 
 /* Estilo del encabezado */
 header {
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
+    /* Fondo blanco */
     padding: 1.5rem 0;
-    border-bottom: 2px solid #ddd; /* Borde sutil */
+    border-bottom: 2px solid #ddd;
+    /* Borde sutil */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -19,13 +21,31 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 header .logo img {
-    max-height: 70px;
+    max-height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+header .logo img {
+    max-height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
+header .menu {
+    flex: 1; /* Para ocupar el espacio disponible entre los otros elementos */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
 }
 
 header .menu ul {
@@ -34,11 +54,18 @@ header .menu ul {
     gap: 2.5rem;
     margin: 0;
     padding: 0;
+    justify-content: center; /* Centra el contenido de la lista */
+}
+
+header .menu ul li {
+    margin: 0;
+    padding: 0;
 }
 
 header .menu ul li a {
     text-decoration: none;
-    color: #333; /* Gris oscuro */
+    color: #333;
+    /* Gris oscuro */
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Arial', sans-serif;
@@ -46,13 +73,17 @@ header .menu ul li a {
 }
 
 header .menu ul li a:hover {
-    color: #89c66a; /* Verde para hover */
+    color: #89c66a;
+    /* Verde para hover */
 }
 
 header .user-cart {
     display: flex;
     align-items: center;
     gap: 1rem;
+    /* Espaciado entre íconos */
+    margin-left: auto;
+    /* Empujar hacia el borde derecho */
 }
 
 header .user-cart input {
@@ -77,6 +108,76 @@ header .user-cart img {
 
 header .user-cart img:hover {
     transform: scale(1.1);
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinear la lupa y el input */
+    width: 250px; /* Reservar espacio para el input */
+}
+
+.search-input {
+    position: absolute; /* Flota y no afecta al layout */
+    right: 0;
+    opacity: 0;
+    width: 0;
+    padding: 0.5rem;
+    border: 2px solid #000;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    outline: none;
+    z-index: 1;
+}
+
+.search-input.active {
+    opacity: 1;
+    width: 300px; /* Define el ancho completo */
+    border-color: #ff0000;
+}
+
+/* Ocultar la lupa al activar */
+.search-container .search-icon.hidden {
+    display: none;
+}
+
+
+.search-icon {
+    position: absolute; /* Para que no empuje otros elementos */
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.search-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframes para expandir el campo de búsqueda */
+@keyframes expandInput {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 200px;
+        opacity: 1;
+    }
+}
+
+/* Keyframes para colapsar el campo de búsqueda */
+@keyframes collapseInput {
+    0% {
+        width: 200px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
 }
 
 /* Sección de productos */
@@ -168,33 +269,39 @@ header .user-cart img:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0; /* Inicialmente invisibles */
-    transition: opacity 1.5s ease, transform 1.5s ease-in-out; /* Transición más lenta */
+    opacity: 0;
+    /* Inicialmente invisibles */
+    transition: opacity 1.5s ease, transform 1.5s ease-in-out;
+    /* Transición más lenta */
 }
 
 /* La primera imagen es visible por defecto */
 .producto-imagen:nth-child(1) {
     opacity: 1;
-    z-index: 3; /* Asegura que la primera imagen esté encima */
+    z-index: 3;
+    /* Asegura que la primera imagen esté encima */
 }
 
 /* Al pasar el mouse sobre las imágenes */
 .producto-imagenes:hover .producto-imagen:nth-child(1) {
     opacity: 0;
     transform: scale(1.05);
-    z-index: 1; /* La primera imagen se mueve debajo */
+    z-index: 1;
+    /* La primera imagen se mueve debajo */
 }
 
 .producto-imagenes:hover .producto-imagen:nth-child(2) {
     opacity: 1;
     transform: scale(1);
-    z-index: 3; /* La segunda imagen aparece encima */
+    z-index: 3;
+    /* La segunda imagen aparece encima */
 }
 
 .producto-imagenes:hover .producto-imagen:nth-child(3) {
     opacity: 0;
     transform: scale(1.05);
-    z-index: 1; /* La tercera imagen se mueve debajo */
+    z-index: 1;
+    /* La tercera imagen se mueve debajo */
 }
 
 /* Sección de Ofertas Especiales */
@@ -222,6 +329,7 @@ header .user-cart img:hover {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -231,6 +339,7 @@ header .user-cart img:hover {
     from {
         transform: scale(0.95);
     }
+
     to {
         transform: scale(1);
     }
@@ -269,4 +378,3 @@ footer {
 .whatsapp-button:hover {
     transform: scale(1.1);
 }
-
