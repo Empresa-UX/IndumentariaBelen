@@ -9,7 +9,7 @@
 header {
     background-color: #ffffff;
     /* Fondo blanco */
-    padding: 1.5rem 0;
+    padding: 1.1rem 0;
     border-bottom: 2px solid #ddd;
     /* Borde sutil */
     position: sticky;
@@ -26,14 +26,12 @@ header .container {
     padding: 0 1rem;
 }
 
-header .logo img {
-    max-height: 30px;
-    cursor: pointer;
-    transition: transform 0.3s;
+header logo {
+    text-align: center;
 }
 
 header .logo img {
-    max-height: 30px;
+    max-height: 60px;
     cursor: pointer;
     transition: transform 0.3s;
 }
@@ -82,7 +80,7 @@ header .user-cart {
     align-items: center;
     gap: 1rem;
     /* Espaciado entre íconos */
-    margin-left: auto;
+    margin: 0 16px 0 16px;
     /* Empujar hacia el borde derecho */
 }
 
@@ -108,6 +106,55 @@ header .user-cart img {
 
 header .user-cart img:hover {
     transform: scale(1.1);
+}
+
+
+/* Animación para los tooltips */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.tooltip {
+    display: none;
+    animation: fadeInOut 2s ease-in-out;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 10;
+}
+
+.tooltip-categorias {
+    top: 66px;
+    left: 8px;
+}
+
+.tooltip-whatsapp {
+    top: 200px;
+    right: 50px;
+}
+
+.tooltip:focus {
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+/* Visibilidad activa */
+.tooltip.show {
+    display: block;
+    opacity: 1;
 }
 
 .search-container {
@@ -142,7 +189,6 @@ header .user-cart img:hover {
     display: none;
 }
 
-
 .search-icon {
     position: absolute; /* Para que no empuje otros elementos */
     right: 10px;
@@ -150,7 +196,7 @@ header .user-cart img:hover {
     z-index: 2;
 }
 
-.search-icon:hover {
+.search-icon:focus {
     transform: scale(1.1);
 }
 

@@ -1,4 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const categoriasTooltip = document.querySelector(".tooltip-categorias");
+    const whatsappTooltip = document.querySelector(".tooltip-whatsapp");
+    
+    // Mostrar los globos con un pequeño retraso
+    setTimeout(() => {
+        categoriasTooltip.classList.add("show");
+        whatsappTooltip.classList.add("show");
+    }, 500); // Aparecen 0.5 segundos después de cargar la página
+
+    // Ahora establecemos que los globos se oculten después de 10 segundos
+    setTimeout(() => {
+        categoriasTooltip.classList.remove("show");
+        whatsappTooltip.classList.remove("show");
+    }, 10500); // 10.5 segundos después de mostrar (por lo que se mantiene durante 10 segundos completos)
+
+    // Selecciona todos los tooltips
+    const tooltips = document.querySelectorAll('.tooltip');
+    
+    // Agrega un evento para cada tooltip
+    tooltips.forEach(tooltip => {
+        tooltip.addEventListener('animationend', () => {
+            // Elimina el tooltip después de la animación
+            tooltip.remove();
+        });
+    });
     // Seleccionar los elementos del campo de búsqueda
     const searchInput = document.querySelector(".search-input");
     const searchIcon = document.querySelector(".search-icon");
