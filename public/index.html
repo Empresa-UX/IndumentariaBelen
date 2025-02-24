@@ -17,10 +17,35 @@
 </a>
 <body>
     <header>
+        <div class="sidebar" id="sidebar">
+            <h2>Categorías</h2>
+            <ul class="category-list">
+                <li class="category-item">Ropa
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">Camisetas</li>
+                        <li class="subcategory-item">Pantalones</li>
+                        <li class="subcategory-item">Chaquetas</li>
+                    </ul>
+                </li>
+                <li class="category-item">Accesorios
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">Sombreros</li>
+                        <li class="subcategory-item">Bufandas</li>
+                    </ul>
+                </li>
+                <li class="category-item">Calzado
+                    <ul class="subcategory-list">
+                        <li class="subcategory-item">Zapatillas</li>
+                        <li class="subcategory-item">Botas</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
         <div class="container">
             <div class="user-cart">
-                <img src="/images/header/categorias.png" alt="categorias">
-                <img src="/images/header/configuracion.png" alt="configuracion">
+                <img src="/images/encabezado/categorias.png" alt="Menú" id="menu-icon">
+                <img src="/images/encabezado/configuracion.png" alt="configuracion">
                 <div class="tooltip tooltip-categorias">Categorías</div>
             </div>
 
@@ -39,10 +64,10 @@
             <div class="user-cart">
                 <div class="search-container">
                     <input type="text" class="search-input" placeholder="Buscar..." />
-                    <img src="/images/header/lupa.png" alt="Buscar" class="search-icon" onclick="toggleSearch()" />
+                    <img src="/images/encabezado/lupa.png" alt="Buscar" class="search-icon" onclick="toggleSearch()" />
                 </div>
-                <img src="/images/header/hogar.png" alt="hogar">
-                <img src="/images/header/notificacion.png" alt="notificacion">
+                <img src="/images/encabezado/hogar.png" alt="hogar">
+                <img src="/images/encabezado/notificacion.png" alt="notificacion">
             </div>            
         </div>
     </header>
@@ -50,41 +75,56 @@
     <section id="productos">
         <h2>Productos Destacados</h2>
         <div class="productos-grid">
-            <!-- Producto con varias imágenes -->
+
+            <!-- Producto Palazzos -->
             <div class="producto">
                 <div class="producto-imagenes">
-                    <img src="images/productos/palazos/fotoEnConjunto.jpg" alt="Palazo de lino - 1"
-                        class="producto-imagen">
-                    <img src="images/productos/palazos/fotoEntera.jpg" alt="Palazo de lino - 2" class="producto-imagen">
-                    <img src="images/productos/palazos/fotoFrontal.jpg" alt="Palazo de lino - 3"
-                        class="producto-imagen">
+                    <img src="images/productos/categorias/palazzos/lino/n (1).jpg" class="producto-imagen">
+                    <img src="images/productos/categorias/palazzos/lino/n (2).jpg" class="producto-imagen">
+                    <img src="images/productos/categorias/palazzos/lino/n (3).jpg" class="producto-imagen">
                 </div>
-                <h3>Palazo de lino</h3>
+                <h3>Palazzo de lino</h3>
                 <p>$7000.00</p>
                 <button>Añadir al carrito</button>
             </div>
-            <!-- Producto Puperas -->
+
+            <!-- Producto Musculosas -->
             <div class="producto">
                 <div class="producto-imagenes">
-                    <img src="images/productos/puperas/fotoEnConjunto.jpg"
-                        alt="Puperas imagen 1" class="producto-imagen">
-                    <img src="images/productos/puperas/fotoEntera.jpg"
-                        alt="Puperas imagen 2" class="producto-imagen">
+                    <img src="images/productos/categorias/musculosas/lisas/n (1).jpeg" class="producto-imagen">
+                    <img src="images/productos/categorias/musculosas/lisas/n (2).jpeg" class="producto-imagen">
                 </div>
-                <h3>Puperas</h3>
+                <h3>Musculosas lisas</h3>
                 <p>$3500.00</p>
                 <button>Añadir al carrito</button>
             </div>
+
+            <!-- Producto Puperas -->
             <div class="producto">
-                <img src="producto2.jpg" alt="Producto 2">
-                <h3>Producto 2</h3>
-                <p>$30.00</p>
+                <div class="producto-imagenes">
+                    <img src="images/productos/categorias/puperas/lisas/n (1).jpg" class="producto-imagen">
+                    <img src="images/productos/categorias/puperas/lisas/n (2).jpg" class="producto-imagen">
+                </div>
+                <h3>Puperas lisas</h3>
+                <p>$3500.00</p>
                 <button>Añadir al carrito</button>
             </div>
-            <!-- Más productos aquí -->
+
+            <!-- Producto Blusas -->
+            <div class="producto">
+                <div class="producto-imagenes">
+                    <img src="images/productos/categorias/blusas/manga corta/n (1).jpg" class="producto-imagen">
+                    <img src="images/productos/categorias/blusas/manga corta/n (2).jpg" class="producto-imagen">
+                    <img src="images/productos/categorias/blusas/manga corta/n (3).jpg" class="producto-imagen">
+                </div>
+                <h3>Blusas manga corta</h3>
+                <p>$3500.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <!-- Más productos destacados aquí -->
         </div>
     </section>
-
+    
     <section id="ofertas-especiales">
         <h2>Ofertas Especiales</h2>
         <div class="ofertas-grid">
@@ -112,18 +152,6 @@
                 <p>$30.00</p>
                 <button>Añadir al carrito</button>
             </div>
-            <div class="producto">
-                <img src="oferta5.jpg" alt="Oferta 5">
-                <h3>Oferta 5</h3>
-                <p>$20.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="producto">
-                <img src="oferta6.jpg" alt="Oferta 6">
-                <h3>Oferta 6</h3>
-                <p>$18.00</p>
-                <button>Añadir al carrito</button>
-            </div>
         </div>
     </section>
 
@@ -148,8 +176,8 @@
             <div class="footer-section">
                 <h4>Síguenos</h4>
                 <ul class="social-media">
-                    <li><a href="#"><img src="images/logos/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="images/logos/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/indumentariabelenok/?next=%2F"><img src="images/logos/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/p/Indumentaria-BELEN-100063667504481/"><img src="images/logos/facebook.png" alt="Facebook"></a></li>
                 </ul>
             </div>
         </div>
@@ -157,6 +185,5 @@
             <p>&copy; 2024 Indumentaria Belen. Todos los derechos reservados.</p>
         </div>
     </footer>
-    
 </body>
 </html>
