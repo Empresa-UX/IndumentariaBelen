@@ -84,9 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const sidebar = document.getElementById("sidebar");
     const categoryItems = document.querySelectorAll(".category-item");
 
-    // Abrir/Cerrar el sidebar al hacer clic en el icono
+    // Abrir/Cerrar el sidebar
     menuIcon.addEventListener("click", function (event) {
-        event.stopPropagation(); // Evita que el clic se propague al documento
+        event.stopPropagation();
         sidebar.classList.toggle("active");
     });
 
@@ -97,15 +97,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Expandir/Contraer subcategorías al hacer clic en la categoría
+    // Verificar si cada categoría tiene subcategorías
     categoryItems.forEach((category) => {
-        category.addEventListener("click", function (event) {
-            event.stopPropagation(); // Evita que el clic cierre el sidebar
-            const subcategoryList = this.querySelector(".subcategory-list");
+        const subcategoryList = category.querySelector(".subcategory-list");
 
-            if (subcategoryList) {
+        if (!subcategoryList || subcategoryList.children.length === 0) {
+            // Si no hay subcategorías, agrega el mensaje
+            const noSubcategory = document.createElement("span");
+            noSubcategory.classList.add("no-subcategory");
+            noSubcategory.textContent = "Sin subcategorías";
+            category.appendChild(noSubcategory);
+        } else {
+            // Agregar evento de clic para expandir subcategorías
+            category.addEventListener("click", function (event) {
+                event.stopPropagation();
                 subcategoryList.classList.toggle("visible");
-            }
-        });
+            });
+        }
     });
 });
