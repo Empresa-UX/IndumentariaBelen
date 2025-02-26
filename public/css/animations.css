@@ -1,0 +1,100 @@
+/* Animaciones visibles */
+
+.tooltip {
+    display: none;
+    animation: fadeInOut 2s ease-in-out;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 10;
+}
+
+.tooltip-categorias {
+    top: 66px;
+    left: 8px;
+}
+
+.tooltip-whatsapp {
+    top: 200px;
+    right: 50px;
+}
+
+.tooltip:focus {
+    transform: scale(1.1);
+    /* Efecto de agrandamiento */
+}
+
+/* Visibilidad activa */
+.tooltip.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Animaciones de objetos u otras cosas*/
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+/* Keyframes para expandir el campo de búsqueda */
+@keyframes expandInput {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 200px;
+        opacity: 1;
+    }
+}
+
+/* Keyframes para colapsar el campo de búsqueda */
+@keyframes collapseInput {
+    0% {
+        width: 200px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.95);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

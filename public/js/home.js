@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.getElementById("menu-icon");
     const sidebar = document.getElementById("sidebar");
     const categoryItems = document.querySelectorAll(".category-item");
+    const subcategoryItems = document.querySelectorAll(".subcategory-item");
 
     // Abrir/Cerrar el sidebar
     menuIcon.addEventListener("click", function (event) {
@@ -96,6 +97,11 @@ document.addEventListener("DOMContentLoaded", function () {
             sidebar.classList.remove("active");
         }
     });
+
+    // Función para limpiar el nombre de la categoría correctamente
+    function getCleanText(element) {
+        return element.firstChild.textContent.trim();
+    }
 
     // Verificar si cada categoría tiene subcategorías
     categoryItems.forEach((category) => {
@@ -115,4 +121,87 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     });
+
+    // Detectar doble clic en una categoría para redirigir a productos.html
+    categoryItems.forEach((category) => {
+        category.addEventListener("dblclick", function () {
+            const categoria = getCleanText(this);
+            console.log("🟢 Categoría seleccionada:", categoria);
+
+            const url = `/html/productos.html?categoria=${encodeURIComponent(categoria)}`;
+            window.location.href = url;
+        });
+    });
+
+    // Detectar doble clic en una subcategoría para redirigir a productos.html con subcategoría
+    subcategoryItems.forEach((subcategory) => {
+        subcategory.addEventListener("dblclick", function () {
+            const subcategoria = subcategory.textContent.trim();
+            const categoria = getCleanText(subcategory.closest(".category-item"));
+            
+            console.log("🟢 Subcategoría seleccionada:", categoria, "->", subcategoria);
+
+            const url = `/html/productos.html?categoria=${encodeURIComponent(categoria)}&subcategoria=${encodeURIComponent(subcategoria)}`;
+            window.location.href = url;
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", async function () {
+    const productosGrid = document.getElementById("productos-grid");
+    const categoriaTitulo = document.getElementById("categoria-titulo");
+    const categoriaDescripcion = document.getElementById("categoria-descripcion");
+    const sliderContainer = document.getElementById("slider-container");
+
+    const params = new URLSearchParams(window.location.search);
+    const categoria = params.get("categoria");
+    const subcategoria = params.get("subcategoria");
+
+    async function cargarProductosDesdeJSON() {
+        try {
+            const response = await fetch("/data/productos.json");
+            if (!response.ok) throw new Error("Error al cargar el JSON");
+            const productosData = await response.json();
+
+            let productosMostrar = [];
+
+            if (categoria && subcategoria) {
+                categoriaTitulo.textContent = subcategoria;
+                productosMostrar = productosData[categoria]?.[subcategoria] || [];
+            } else if (categoria) {
+                categoriaTitulo.textContent = categoria;
+                Object.values(productosData[categoria] || {}).forEach(arr => productosMostrar.push(...arr));
+            }
+
+            if (productosMostrar.length > 0) {
+                categoriaDescripcion.textContent = productosMostrar[0].descripcion || "Sin descripción.";
+                cargarSlider(productosMostrar[0].imagenes);
+            } else {
+                categoriaDescripcion.textContent = "No hay productos disponibles.";
+            }
+        } catch (error) {
+            console.error("Error al cargar productos:", error);
+        }
+    }
+
+    function cargarSlider(imagenes) {
+        sliderContainer.innerHTML = "";
+        imagenes.forEach(img => {
+            const imgElement = document.createElement("img");
+            imgElement.src = img;
+            imgElement.alt = "Imagen del producto";
+            sliderContainer.appendChild(imgElement);
+        });
+    }
+
+    // Función para controlar el slider
+    function moverSlider(direccion) {
+        const desplazamiento = 100; // Cantidad de desplazamiento en px
+        sliderContainer.style.transform = `translateX(${direccion * desplazamiento}px)`;
+    }
+
+    document.querySelector(".left-btn").addEventListener("click", () => moverSlider(1));
+    document.querySelector(".right-btn").addEventListener("click", () => moverSlider(-1));
+
+    cargarProductosDesdeJSON();
 });

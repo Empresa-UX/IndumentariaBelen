@@ -1,0 +1,49 @@
+/* Lupa de búsqueda */
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Alinear la lupa y el input */
+    width: 250px;
+    /* Reservar espacio para el input */
+}
+
+.search-input {
+    position: absolute;
+    /* Flota y no afecta al layout */
+    right: 0;
+    opacity: 0;
+    width: 0;
+    padding: 0.5rem;
+    border: 2px solid #000;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    outline: none;
+    z-index: 1;
+}
+
+.search-input.active {
+    opacity: 1;
+    width: 300px;
+    /* Define el ancho completo */
+    border-color: #ff0000;
+}
+
+/* Ocultar la lupa al activar */
+.search-container .search-icon.hidden {
+    display: none;
+}
+
+.search-icon {
+    position: absolute;
+    /* Para que no empuje otros elementos */
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.search-icon:focus {
+    transform: scale(1.1);
+}

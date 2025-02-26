@@ -1,0 +1,370 @@
+{
+    "Bermuda": {
+        "Común": [
+            {
+                "nombre": "Bermuda Común",
+                "imagenes": [
+                    "/images/productos/categorias/bermuda/n (1).jpg",
+                    "/images/productos/categorias/bermuda/n (2).jpg",
+                    "/images/productos/categorias/bermuda/n (3).jpg",
+                    "/images/productos/categorias/bermuda/n (4).jpg"
+                ],
+                "descripcion": "Bermuda cómoda con bolsillos amplios."
+            }
+        ]
+    },
+    "Blusas": {
+        "Fibrana": [
+            {
+                "nombre": "Blusa de Fibrana",
+                "imagenes": [
+                    "/images/productos/categorias/blusas/fibrana/n (1).jpg",
+                    "/images/productos/categorias/blusas/fibrana/n (2).jpg",
+                    "/images/productos/categorias/blusas/fibrana/n (3).jpg"
+                ],
+                "descripcion": "Blusa ligera y fresca de fibrana."
+            }
+        ],
+        "Manga corta": [
+            {
+                "nombre": "Blusa Manga Corta",
+                "imagenes": [
+                    "/images/productos/categorias/blusas/manga corta/n (1).jpg",
+                    "/images/productos/categorias/blusas/manga corta/n (2).jpg",
+                    "/images/productos/categorias/blusas/manga corta/n (3).jpg",
+                    "/images/productos/categorias/blusas/manga corta/n (4).jpg"
+                ],
+                "descripcion": "Blusa elegante de manga corta."
+            }
+        ],
+        "Manga larga": [
+            {
+                "nombre": "Blusa Manga Larga",
+                "imagenes": [
+                    "/images/productos/categorias/blusas/manga larga/n (2).jpg",
+                    "/images/productos/categorias/blusas/manga larga/n (6).jpg",
+                    "/images/productos/categorias/blusas/manga larga/n (8).jpg",
+                    "/images/productos/categorias/blusas/manga larga/n (12).jpg"
+
+                ],
+                "descripcion": "Blusa cómoda de manga larga para invierno."
+            }
+        ]
+    },
+    "Camperas": {
+        "Bengalina": [
+            {
+                "nombre": "Campera Bengalina",
+                "imagenes": [
+                    "/images/productos/categorias/camperas/bengalina/n (2).jpg",
+                    "/images/productos/categorias/camperas/bengalina/n (3).jpg",
+                    "/images/productos/categorias/camperas/bengalina/n (4).jpg",
+                    "/images/productos/categorias/camperas/bengalina/n (1).jpg"
+                ],
+                "descripcion": "Campera ajustada con diseño moderno."
+            }
+        ],
+        "Bengalina corta": [
+            {
+                "nombre": "Campera Bengalina Corta",
+                "imagenes": [
+                    "/images/productos/categorias/camperas/bengalina_corto/n (1).jpg",
+                    "/images/productos/categorias/camperas/bengalina_corto/n (2).jpg",
+                    "/images/productos/categorias/camperas/bengalina_corto/n (3).jpg",
+                    "/images/productos/categorias/camperas/bengalina_corto/n (4).jpg"
+                ],
+                "descripcion": "Versión corta de la campera Bengalina."
+            }
+        ],
+        "Campera rallada": [
+            {
+                "nombre": "Campera Rallada",
+                "imagenes": [
+                    "/images/productos/categorias/camperas/rallada/n (1).jpg",
+                    "/images/productos/categorias/camperas/rallada/n (2).jpg",
+                    "/images/productos/categorias/camperas/rallada/n (3).jpg",
+                    "/images/productos/categorias/camperas/rallada/n (6).jpg"
+
+                ],
+                "descripcion": "Campera rallada con diseño alcolchado."
+            }
+        ],
+        "Campera especial": [
+            {
+                "nombre": "Campera Rallada",
+                "imagenes": [
+                    "/images/productos/categorias/camperas/rallada_especial/n (1).jpg",
+                    "/images/productos/categorias/camperas/rallada_especial/n (2).jpg",
+                    "/images/productos/categorias/camperas/rallada_especial/n (3).jpg",
+                    "/images/productos/categorias/camperas/rallada_especial/n (5).jpg"
+                ],
+                "descripcion": "Campera rallada con un diseño más sotisficado."
+            }
+        ],
+        "Campera rompeviento": [
+            {
+                "nombre": "Campera Rallada",
+                "imagenes": [
+                    "/images/productos/categorias/camperas/rompeviento/n (1).jpg",
+                    "/images/productos/categorias/camperas/rompeviento/n (2).jpg",
+                    "/images/productos/categorias/camperas/rompeviento/n (3).jpg"
+                ],
+                "descripcion": "Campera rompeviento para días lluviosos"
+            }
+        ]
+
+    },
+    "Cardigan": {
+        "Común": [
+            {
+                "nombre": "Cardigan Largo",
+                "imagenes": [
+                    "/images/productos/categorias/cardigan/n (1).jpg",
+                    "/images/productos/categorias/cardigan/n (2).jpg",
+                    "/images/productos/categorias/cardigan/n (3).jpg"
+                ],
+                "descripcion": "Cardigan suave y elegante para el frío."
+            }
+        ]
+    },
+    "Chalecos": {
+        "Infable": [
+            {
+                "nombre": "Chaleco Inflable",
+                "imagenes": [
+                    "/images/productos/categorias/chalecos/infable/n (1).jpg",
+                    "/images/productos/categorias/chalecos/infable/n (4).jpg",
+                    "/images/productos/categorias/chalecos/infable/n (5).jpg",
+                    "/images/productos/categorias/chalecos/infable/n (6).jpg"
+                ],
+                "descripcion": "Chaleco acolchonado con relleno liviano."
+            }
+        ],
+        "Largo": [
+            {
+                "nombre": "Chaleco Inflable",
+                "imagenes": [
+                    "/images/productos/categorias/chalecos/largo/n (1).jpg",
+                    "/images/productos/categorias/chalecos/largo/n (2).jpg",
+                    "/images/productos/categorias/chalecos/largo/n (3).jpg"
+                ],
+                "descripcion": "Chaleco de rallada ancha y una altura especial."
+            }
+        ]
+
+    },
+    "Musculosas": {
+        "Estampadas": [
+            {
+                "nombre": "Musculosa Estampada",
+                "imagenes": [
+                    "/images/productos/categorias/musculosas/estampadas/n (1).jpg",
+                    "/images/productos/categorias/musculosas/estampadas/n (2).jpg",
+                    "/images/productos/categorias/musculosas/estampadas/n (3).jpg"
+                ],
+                "descripcion": "Musculosa con estampado llamativo."
+            }
+        ],
+        "Lisas": [
+            {
+                "nombre": "Musculosa Lisa",
+                "imagenes": [
+                    "/images/productos/categorias/musculosas/lisas/n (1).jpg",
+                    "/images/productos/categorias/musculosas/lisas/n (2).jpg"
+                ],
+                "descripcion": "Musculosa en colores lisos para combinar fácilmente."
+            }
+        ]
+    },
+    "Palazzos": {
+        "Lino": [
+            {
+                "nombre": "Palazzo de Lino",
+                "imagenes": [
+                    "/images/productos/categorias/palazzos/lino/n (1).jpg",
+                    "/images/productos/categorias/palazzos/lino/n (2).jpg",
+                    "/images/productos/categorias/palazzos/lino/n (3).jpg"
+                ],
+                "descripcion": "Palazzo cómodo hecho de lino."
+            }
+        ],
+        "Morley": [
+            {
+                "nombre": "Palazzo Morley",
+                "imagenes": [
+                    "/images/productos/categorias/palazzos/morley/n (1).jpg",
+                    "/images/productos/categorias/palazzos/morley/n (4).jpg",
+                    "/images/productos/categorias/palazzos/morley/n (3).jpg",
+                    "/images/productos/categorias/palazzos/morley/n (6).jpg"
+                ],
+                "descripcion": "Palazzo con tela morley para mayor confort."
+            }
+        ]
+    },
+    "Pantalon": {
+        "Común": [
+            {
+                "nombre": "Pantalón de Jean",
+                "imagenes": [
+                    "/images/productos/categorias/pantalon/n (1).jpg",
+                    "/images/productos/categorias/pantalon/n (3).jpg",
+                    "/images/productos/categorias/pantalon/n (4).jpg"
+                ],
+                "descripcion": "Pantalón de jean azul clásico."
+            }
+        ]
+    },
+    "Parka": {
+        "Común": [
+            {
+                "nombre": "Parka Común",
+                "imagenes": [
+                    "/images/productos/categorias/parka/comun/n (1).jpg",
+                    "/images/productos/categorias/parka/comun/n (4).jpg"
+                ],
+                "descripcion": "Parka básica para uso diario."
+            }
+        ],
+        "Especial": [
+            {
+                "nombre": "Parka Común",
+                "imagenes": [
+                    "/images/productos/categorias/parka/especial/n (2).jpg"
+                ],
+                "descripcion": "Parka especial con retoques."
+            }
+        ],
+        "Nena": [
+            {
+                "nombre": "Parka Común",
+                "imagenes": [
+                    "/images/productos/categorias/parka/nena/n (1).jpg",
+                    "/images/productos/categorias/parka/nena/n (2).jpg"
+                ],
+                "descripcion": "Parka para nena, de talla baja"
+            }
+        ]
+    },
+    "Puperas": {
+        "Estampadas": [
+            {
+                "nombre": "Pupera Estampada",
+                "imagenes": [
+                    "/images/productos/categorias/puperas/estampadas/n (1).jpg",
+                    "/images/productos/categorias/puperas/estampadas/n (2).jpg",
+                    "/images/productos/categorias/puperas/estampadas/n (10).jpg",
+                    "/images/productos/categorias/puperas/estampadas/n (8).jpg"
+                ],
+                "descripcion": "Pupera con estampado moderno."
+            }
+        ],
+        "Lisas": [
+            {
+                "nombre": "Pupera Lisa",
+                "imagenes": [
+                    "/images/productos/categorias/puperas/lisas/n (1).jpg",
+                    "/images/productos/categorias/puperas/lisas/n (2).jpg"
+
+                ],
+                "descripcion": "Pupera lisas muy cómodas"
+            }
+        ]
+    },
+    "Ruanas": {
+        "Común": [
+            {
+                "nombre": "Ruana Común",
+                "imagenes": [
+                    "/images/productos/categorias/ruanas/n (1).jpg",
+                    "/images/productos/categorias/ruanas/n (2).jpg",
+                    "/images/productos/categorias/ruanas/n (3).jpg",
+                    "/images/productos/categorias/ruanas/n (4).jpg"
+                ],
+                "descripcion": "Ruanas cómodas para acompañar, como una bufanda."
+            }
+        ]
+    },
+    "Short": {
+        "Fibrana": [
+            {
+                "nombre": "Short de Fibrana",
+                "imagenes": [
+                    "/images/productos/categorias/short/fibrana/n (1).jpg",
+                    "/images/productos/categorias/short/fibrana/n (2).jpg",
+                    "/images/productos/categorias/short/fibrana/n (3).jpg",
+                    "/images/productos/categorias/short/fibrana/n (4).jpg"
+                ],
+                "descripcion": "Short ligero hecho de fibrana."
+            }
+        ],
+        "Satten": [
+            {
+                "nombre": "Short de Satten",
+                "imagenes": [
+                    "/images/productos/categorias/short/satten/n (1).jpg",
+                    "/images/productos/categorias/short/satten/n (3).jpg",
+                    "/images/productos/categorias/short/satten/n (7).jpg",
+                    "/images/productos/categorias/short/satten/n (12).jpg"
+                ],
+                "descripcion": "Short ligero hecho de satten."
+            }
+        ]
+    },
+    "Tapado": {
+        "Común": [
+            {
+                "nombre": "Tapado Común",
+                "imagenes": [
+                    "/images/productos/categorias/tapado/comun/n (2).jpg",
+                    "/images/productos/categorias/tapado/comun/n (3).jpg",
+                    "/images/productos/categorias/tapado/comun/n (4).jpg"
+                ],
+                "descripcion": "Tapado abrigado para invierno."
+            }
+        ],
+        "ConPolar": [
+            {
+                "nombre": "Tapado con Polar",
+                "imagenes": [
+                    "/images/productos/categorias/tapado/con polar/n (1).jpg",
+                    "/images/productos/categorias/tapado/con polar/n (2).jpg"
+                ],
+                "descripcion": "Tapado con el agregado del polar para un mejor confort."
+            }
+        ],
+        "Especial": [
+            {
+                "nombre": "Tapado Especial",
+                "imagenes": [
+                    "/images/productos/categorias/tapado/especial/n (1).jpg",
+                    "/images/productos/categorias/tapado/especial/n (2).jpg"
+                ],
+                "descripcion": "Tapado especial con retoques."
+            }
+        ]
+    },
+    "Vestidos": {
+        "Modal": [
+            {
+                "nombre": "Vestido Modal",
+                "imagenes": [
+                    "/images/productos/categorias/vestidos/modal/n (2).jpg",
+                    "/images/productos/categorias/vestidos/modal/n (3).jpg"
+                ],
+                "descripcion": "Vestido cómodo de tela modal."
+            }
+        ],
+        "Poplin": [
+            {
+                "nombre": "Vestido Poplin",
+                "imagenes": [
+                    "/images/productos/categorias/vestidos/poplin/n (2).jpg",
+                    "/images/productos/categorias/vestidos/poplin/n (1).jpg",
+                    "/images/productos/categorias/vestidos/poplin/n (2).jpg",
+                    "/images/productos/categorias/vestidos/poplin/n (3).jpg"
+                ],
+                "descripcion": "Vestido ligero hecho de poplin."
+            }
+        ]
+    }
+}
