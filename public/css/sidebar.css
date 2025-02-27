@@ -1,12 +1,9 @@
-/* Barra lateral */
-
+/* ---- SIDEBAR ---- */
 .sidebar {
     position: fixed;
     top: 0;
     left: -300px;
-    /* Más ancho */
     width: 300px;
-    /* Ancho aumentado */
     height: 100%;
     background-color: #ffffff;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
@@ -15,28 +12,9 @@
     z-index: 1100;
     font-family: 'Poppins', sans-serif;
     overflow-y: auto;
-    /* Habilita scroll vertical */
-    scrollbar-width: thin;
-    /* Estiliza la barra en Firefox */
-    scrollbar-color: #aaa #f1f1f1;
-    /* Color de la barra */
 }
 
-/* Personalizar barra de desplazamiento en Webkit (Chrome, Edge, Safari) */
-.sidebar::-webkit-scrollbar {
-    width: 8px;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-    background: #aaa;
-    border-radius: 5px;
-}
-
-.sidebar::-webkit-scrollbar-thumb:hover {
-    background: #888;
-}
-
-/* Sidebar cuando está activo */
+/* Sidebar activo */
 .sidebar.active {
     left: 0;
 }
@@ -51,16 +29,14 @@
     border-bottom: 2px solid #ddd;
 }
 
-/* Lista de categorías */
+/* ---- LISTA DE CATEGORÍAS ---- */
 .category-list {
     list-style-type: none;
     padding: 0;
     margin-top: 15px;
 }
 
-/* Categorías */
 .category-item {
-    list-style-type: none;
     font-size: 16px;
     font-weight: 600;
     color: #444;
@@ -70,11 +46,39 @@
     border-radius: 5px;
 }
 
-.category-item:hover {
-    background-color: #f2f2f2;
+/* ---- ENLACES DE CATEGORÍAS ---- */
+.category-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 8px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
-/* Subcategorías */
+.category-link:hover {
+    color: black;
+}
+
+/* Línea debajo de la categoría al pasar el mouse */
+.category-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.category-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* ---- SUBCATEGORÍAS ---- */
 .subcategory-list {
     display: none;
     margin-left: 15px;
@@ -88,29 +92,16 @@
 
 .subcategory-item {
     font-size: 14px;
-    color: rgba(85, 85, 85, 0.7);
     padding: 8px;
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
-    border-radius: 5px;
 }
 
-.subcategory-item:hover {
-    background-color: #f5f5f5;
+.subcategory-link {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease-in-out;
 }
 
-.category-list,
-.subcategory-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.no-subcategory {
-    font-size: 12px;
-    color: rgba(85, 85, 85, 0.6);
-    background: #f2f2f2;
-    padding: 3px 8px;
-    border-radius: 5px;
-    margin-left: 10px;
-    font-style: italic;
+.subcategory-link:hover {
+    color: black;
 }

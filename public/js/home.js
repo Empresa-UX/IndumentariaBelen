@@ -82,8 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.getElementById("menu-icon");
     const sidebar = document.getElementById("sidebar");
-    const categoryItems = document.querySelectorAll(".category-item");
-    const subcategoryItems = document.querySelectorAll(".subcategory-item");
+    const categoryLinks = document.querySelectorAll(".category-link");
+    const subcategoryLinks = document.querySelectorAll(".subcategory-link");
 
     // Abrir/Cerrar el sidebar
     menuIcon.addEventListener("click", function (event) {
@@ -98,110 +98,34 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Función para limpiar el nombre de la categoría correctamente
-    function getCleanText(element) {
-        return element.firstChild.textContent.trim();
-    }
+    // Expande la categoría cuando se hace clic
+    categoryLinks.forEach((categoryLink) => {
+        categoryLink.addEventListener("click", function (event) {
+            event.preventDefault(); // Evita el comportamiento por defecto del enlace
 
-    // Verificar si cada categoría tiene subcategorías
-    categoryItems.forEach((category) => {
-        const subcategoryList = category.querySelector(".subcategory-list");
-
-        if (!subcategoryList || subcategoryList.children.length === 0) {
-            // Si no hay subcategorías, agrega el mensaje
-            const noSubcategory = document.createElement("span");
-            noSubcategory.classList.add("no-subcategory");
-            noSubcategory.textContent = "Sin subcategorías";
-            category.appendChild(noSubcategory);
-        } else {
-            // Agregar evento de clic para expandir subcategorías
-            category.addEventListener("click", function (event) {
-                event.stopPropagation();
+            const subcategoryList = this.parentElement.querySelector(".subcategory-list");
+            if (subcategoryList) {
                 subcategoryList.classList.toggle("visible");
-            });
-        }
-    });
-
-    // Detectar doble clic en una categoría para redirigir a productos.html
-    categoryItems.forEach((category) => {
-        category.addEventListener("dblclick", function () {
-            const categoria = getCleanText(this);
-            console.log("🟢 Categoría seleccionada:", categoria);
-
-            const url = `/html/productos.html?categoria=${encodeURIComponent(categoria)}`;
-            window.location.href = url;
+            }
         });
     });
 
-    // Detectar doble clic en una subcategoría para redirigir a productos.html con subcategoría
-    subcategoryItems.forEach((subcategory) => {
-        subcategory.addEventListener("dblclick", function () {
-            const subcategoria = subcategory.textContent.trim();
-            const categoria = getCleanText(subcategory.closest(".category-item"));
-            
-            console.log("🟢 Subcategoría seleccionada:", categoria, "->", subcategoria);
+    // Detectar clic en una subcategoría y redirigir correctamente
+    subcategoryLinks.forEach((subcategoryLink) => {
+        subcategoryLink.addEventListener("click", function (event) {
+            event.preventDefault(); // Evita el comportamiento por defecto del enlace
 
+            const subcategoria = this.dataset.subcategory; // Obtiene el nombre de la subcategoría
+            const categoria = this.closest(".category-item").querySelector(".category-link").dataset.category; // Obtiene la categoría correcta
+
+            if (!categoria || !subcategoria) {
+                console.error("❌ Error: No se pudo obtener la categoría o subcategoría.");
+                return;
+            }
+
+            console.log("🟢 Redirigiendo a:", categoria, "->", subcategoria);
             const url = `/html/productos.html?categoria=${encodeURIComponent(categoria)}&subcategoria=${encodeURIComponent(subcategoria)}`;
             window.location.href = url;
         });
     });
-});
-
-document.addEventListener("DOMContentLoaded", async function () {
-    const productosGrid = document.getElementById("productos-grid");
-    const categoriaTitulo = document.getElementById("categoria-titulo");
-    const categoriaDescripcion = document.getElementById("categoria-descripcion");
-    const sliderContainer = document.getElementById("slider-container");
-
-    const params = new URLSearchParams(window.location.search);
-    const categoria = params.get("categoria");
-    const subcategoria = params.get("subcategoria");
-
-    async function cargarProductosDesdeJSON() {
-        try {
-            const response = await fetch("/data/productos.json");
-            if (!response.ok) throw new Error("Error al cargar el JSON");
-            const productosData = await response.json();
-
-            let productosMostrar = [];
-
-            if (categoria && subcategoria) {
-                categoriaTitulo.textContent = subcategoria;
-                productosMostrar = productosData[categoria]?.[subcategoria] || [];
-            } else if (categoria) {
-                categoriaTitulo.textContent = categoria;
-                Object.values(productosData[categoria] || {}).forEach(arr => productosMostrar.push(...arr));
-            }
-
-            if (productosMostrar.length > 0) {
-                categoriaDescripcion.textContent = productosMostrar[0].descripcion || "Sin descripción.";
-                cargarSlider(productosMostrar[0].imagenes);
-            } else {
-                categoriaDescripcion.textContent = "No hay productos disponibles.";
-            }
-        } catch (error) {
-            console.error("Error al cargar productos:", error);
-        }
-    }
-
-    function cargarSlider(imagenes) {
-        sliderContainer.innerHTML = "";
-        imagenes.forEach(img => {
-            const imgElement = document.createElement("img");
-            imgElement.src = img;
-            imgElement.alt = "Imagen del producto";
-            sliderContainer.appendChild(imgElement);
-        });
-    }
-
-    // Función para controlar el slider
-    function moverSlider(direccion) {
-        const desplazamiento = 100; // Cantidad de desplazamiento en px
-        sliderContainer.style.transform = `translateX(${direccion * desplazamiento}px)`;
-    }
-
-    document.querySelector(".left-btn").addEventListener("click", () => moverSlider(1));
-    document.querySelector(".right-btn").addEventListener("click", () => moverSlider(-1));
-
-    cargarProductosDesdeJSON();
 });

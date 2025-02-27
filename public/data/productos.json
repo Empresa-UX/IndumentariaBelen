@@ -9,7 +9,11 @@
                     "/images/productos/categorias/bermuda/n (3).jpg",
                     "/images/productos/categorias/bermuda/n (4).jpg"
                 ],
-                "descripcion": "Bermuda cómoda con bolsillos amplios."
+                "descripcion": "Bermuda cómoda con bolsillos amplios.",
+                "precio": 10000,
+                "material": "Algodón",
+                "colores": ["Negro", "Blanco", "Azul"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     },
@@ -22,7 +26,11 @@
                     "/images/productos/categorias/blusas/fibrana/n (2).jpg",
                     "/images/productos/categorias/blusas/fibrana/n (3).jpg"
                 ],
-                "descripcion": "Blusa ligera y fresca de fibrana."
+                "descripcion": "Blusa ligera y fresca de fibrana.",
+                "precio": 12000,
+                "material": "Fibrana",
+                "colores": ["Rojo", "Blanco", "Beige"],
+                "talles": ["S", "M", "L"]
             }
         ],
         "Manga corta": [
@@ -34,20 +42,27 @@
                     "/images/productos/categorias/blusas/manga corta/n (3).jpg",
                     "/images/productos/categorias/blusas/manga corta/n (4).jpg"
                 ],
-                "descripcion": "Blusa elegante de manga corta."
+                "descripcion": "Blusa elegante de manga corta.",
+                "precio": 13500,
+                "material": "Algodón",
+                "colores": ["Negro", "Blanco"],
+                "talles": ["M", "L"]
             }
         ],
         "Manga larga": [
             {
                 "nombre": "Blusa Manga Larga",
                 "imagenes": [
+                    "/images/productos/categorias/blusas/manga larga/n (15).jpg",
+                    "/images/productos/categorias/blusas/manga larga/n (12).jpg",
                     "/images/productos/categorias/blusas/manga larga/n (2).jpg",
-                    "/images/productos/categorias/blusas/manga larga/n (6).jpg",
-                    "/images/productos/categorias/blusas/manga larga/n (8).jpg",
-                    "/images/productos/categorias/blusas/manga larga/n (12).jpg"
-
+                    "/images/productos/categorias/blusas/manga larga/n (6).jpg"
                 ],
-                "descripcion": "Blusa cómoda de manga larga para invierno."
+                "descripcion": "Blusa elegante de manga larga.",
+                "precio": 13500,
+                "material": "Algodón",
+                "colores": ["Negro", "Blanco"],
+                "talles": ["M", "L"]
             }
         ]
     },
@@ -57,11 +72,13 @@
                 "nombre": "Campera Bengalina",
                 "imagenes": [
                     "/images/productos/categorias/camperas/bengalina/n (2).jpg",
-                    "/images/productos/categorias/camperas/bengalina/n (3).jpg",
-                    "/images/productos/categorias/camperas/bengalina/n (4).jpg",
-                    "/images/productos/categorias/camperas/bengalina/n (1).jpg"
+                    "/images/productos/categorias/camperas/bengalina/n (3).jpg"
                 ],
-                "descripcion": "Campera ajustada con diseño moderno."
+                "descripcion": "Campera ajustada con diseño moderno.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Bengalina corta": [
@@ -73,7 +90,11 @@
                     "/images/productos/categorias/camperas/bengalina_corto/n (3).jpg",
                     "/images/productos/categorias/camperas/bengalina_corto/n (4).jpg"
                 ],
-                "descripcion": "Versión corta de la campera Bengalina."
+                "descripcion": "Versión corta de la campera Bengalina.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Campera rallada": [
@@ -86,7 +107,11 @@
                     "/images/productos/categorias/camperas/rallada/n (6).jpg"
 
                 ],
-                "descripcion": "Campera rallada con diseño alcolchado."
+                "descripcion": "Campera rallada con diseño alcolchado.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Campera especial": [
@@ -98,7 +123,11 @@
                     "/images/productos/categorias/camperas/rallada_especial/n (3).jpg",
                     "/images/productos/categorias/camperas/rallada_especial/n (5).jpg"
                 ],
-                "descripcion": "Campera rallada con un diseño más sotisficado."
+                "descripcion": "Campera rallada con un diseño más sotisficado.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Campera rompeviento": [
@@ -109,7 +138,11 @@
                     "/images/productos/categorias/camperas/rompeviento/n (2).jpg",
                     "/images/productos/categorias/camperas/rompeviento/n (3).jpg"
                 ],
-                "descripcion": "Campera rompeviento para días lluviosos"
+                "descripcion": "Campera rompeviento para días lluviosos",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
 
@@ -117,13 +150,17 @@
     "Cardigan": {
         "Común": [
             {
-                "nombre": "Cardigan Largo",
+                "nombre": "Cardigan Común",
                 "imagenes": [
                     "/images/productos/categorias/cardigan/n (1).jpg",
                     "/images/productos/categorias/cardigan/n (2).jpg",
                     "/images/productos/categorias/cardigan/n (3).jpg"
                 ],
-                "descripcion": "Cardigan suave y elegante para el frío."
+                "descripcion": "Cardigan suave y elegante para el frío.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     },
@@ -132,12 +169,16 @@
             {
                 "nombre": "Chaleco Inflable",
                 "imagenes": [
-                    "/images/productos/categorias/chalecos/infable/n (1).jpg",
-                    "/images/productos/categorias/chalecos/infable/n (4).jpg",
+                    "/images/productos/categorias/chalecos/infable/n (1).jpeg",
+                    "/images/productos/categorias/chalecos/infable/n (4).jpeg",
                     "/images/productos/categorias/chalecos/infable/n (5).jpg",
                     "/images/productos/categorias/chalecos/infable/n (6).jpg"
                 ],
-                "descripcion": "Chaleco acolchonado con relleno liviano."
+                "descripcion": "Chaleco acolchonado con relleno liviano.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Largo": [
@@ -148,7 +189,11 @@
                     "/images/productos/categorias/chalecos/largo/n (2).jpg",
                     "/images/productos/categorias/chalecos/largo/n (3).jpg"
                 ],
-                "descripcion": "Chaleco de rallada ancha y una altura especial."
+                "descripcion": "Chaleco de rallada ancha y una altura especial.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
 
@@ -162,7 +207,11 @@
                     "/images/productos/categorias/musculosas/estampadas/n (2).jpg",
                     "/images/productos/categorias/musculosas/estampadas/n (3).jpg"
                 ],
-                "descripcion": "Musculosa con estampado llamativo."
+                "descripcion": "Musculosa con estampado llamativo.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Lisas": [
@@ -172,7 +221,11 @@
                     "/images/productos/categorias/musculosas/lisas/n (1).jpg",
                     "/images/productos/categorias/musculosas/lisas/n (2).jpg"
                 ],
-                "descripcion": "Musculosa en colores lisos para combinar fácilmente."
+                "descripcion": "Musculosa en colores lisos para combinar fácilmente.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     },
@@ -185,7 +238,11 @@
                     "/images/productos/categorias/palazzos/lino/n (2).jpg",
                     "/images/productos/categorias/palazzos/lino/n (3).jpg"
                 ],
-                "descripcion": "Palazzo cómodo hecho de lino."
+                "descripcion": "Palazzo cómodo hecho de lino.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Morley": [
@@ -197,7 +254,11 @@
                     "/images/productos/categorias/palazzos/morley/n (3).jpg",
                     "/images/productos/categorias/palazzos/morley/n (6).jpg"
                 ],
-                "descripcion": "Palazzo con tela morley para mayor confort."
+                "descripcion": "Palazzo con tela morley para mayor confort.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     },
@@ -210,7 +271,11 @@
                     "/images/productos/categorias/pantalon/n (3).jpg",
                     "/images/productos/categorias/pantalon/n (4).jpg"
                 ],
-                "descripcion": "Pantalón de jean azul clásico."
+                "descripcion": "Pantalón de jean azul clásico.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     },
@@ -222,7 +287,11 @@
                     "/images/productos/categorias/parka/comun/n (1).jpg",
                     "/images/productos/categorias/parka/comun/n (4).jpg"
                 ],
-                "descripcion": "Parka básica para uso diario."
+                "descripcion": "Parka básica para uso diario.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Especial": [
@@ -231,7 +300,11 @@
                 "imagenes": [
                     "/images/productos/categorias/parka/especial/n (2).jpg"
                 ],
-                "descripcion": "Parka especial con retoques."
+                "descripcion": "Parka especial con retoques.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Nena": [
@@ -241,7 +314,11 @@
                     "/images/productos/categorias/parka/nena/n (1).jpg",
                     "/images/productos/categorias/parka/nena/n (2).jpg"
                 ],
-                "descripcion": "Parka para nena, de talla baja"
+                "descripcion": "Parka para nena, de talla baja",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     },
@@ -255,7 +332,11 @@
                     "/images/productos/categorias/puperas/estampadas/n (10).jpg",
                     "/images/productos/categorias/puperas/estampadas/n (8).jpg"
                 ],
-                "descripcion": "Pupera con estampado moderno."
+                "descripcion": "Pupera con estampado moderno.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Lisas": [
@@ -266,7 +347,11 @@
                     "/images/productos/categorias/puperas/lisas/n (2).jpg"
 
                 ],
-                "descripcion": "Pupera lisas muy cómodas"
+                "descripcion": "Pupera lisas muy cómodas",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     },
@@ -275,12 +360,16 @@
             {
                 "nombre": "Ruana Común",
                 "imagenes": [
-                    "/images/productos/categorias/ruanas/n (1).jpg",
+                    "/images/productos/categorias/ruanas/n (1).jpeg",
                     "/images/productos/categorias/ruanas/n (2).jpg",
-                    "/images/productos/categorias/ruanas/n (3).jpg",
-                    "/images/productos/categorias/ruanas/n (4).jpg"
+                    "/images/productos/categorias/ruanas/n (3).jpeg",
+                    "/images/productos/categorias/ruanas/n (4).jpeg"
                 ],
-                "descripcion": "Ruanas cómodas para acompañar, como una bufanda."
+                "descripcion": "Ruanas cómodas para acompañar, como una bufanda.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     },
@@ -294,7 +383,11 @@
                     "/images/productos/categorias/short/fibrana/n (3).jpg",
                     "/images/productos/categorias/short/fibrana/n (4).jpg"
                 ],
-                "descripcion": "Short ligero hecho de fibrana."
+                "descripcion": "Short ligero hecho de fibrana.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Satten": [
@@ -306,7 +399,11 @@
                     "/images/productos/categorias/short/satten/n (7).jpg",
                     "/images/productos/categorias/short/satten/n (12).jpg"
                 ],
-                "descripcion": "Short ligero hecho de satten."
+                "descripcion": "Short ligero hecho de satten.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     },
@@ -319,7 +416,11 @@
                     "/images/productos/categorias/tapado/comun/n (3).jpg",
                     "/images/productos/categorias/tapado/comun/n (4).jpg"
                 ],
-                "descripcion": "Tapado abrigado para invierno."
+                "descripcion": "Tapado abrigado para invierno.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "ConPolar": [
@@ -329,7 +430,11 @@
                     "/images/productos/categorias/tapado/con polar/n (1).jpg",
                     "/images/productos/categorias/tapado/con polar/n (2).jpg"
                 ],
-                "descripcion": "Tapado con el agregado del polar para un mejor confort."
+                "descripcion": "Tapado con el agregado del polar para un mejor confort.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Especial": [
@@ -339,7 +444,11 @@
                     "/images/productos/categorias/tapado/especial/n (1).jpg",
                     "/images/productos/categorias/tapado/especial/n (2).jpg"
                 ],
-                "descripcion": "Tapado especial con retoques."
+                "descripcion": "Tapado especial con retoques.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     },
@@ -351,7 +460,11 @@
                     "/images/productos/categorias/vestidos/modal/n (2).jpg",
                     "/images/productos/categorias/vestidos/modal/n (3).jpg"
                 ],
-                "descripcion": "Vestido cómodo de tela modal."
+                "descripcion": "Vestido cómodo de tela modal.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ],
         "Poplin": [
@@ -363,7 +476,11 @@
                     "/images/productos/categorias/vestidos/poplin/n (2).jpg",
                     "/images/productos/categorias/vestidos/poplin/n (3).jpg"
                 ],
-                "descripcion": "Vestido ligero hecho de poplin."
+                "descripcion": "Vestido ligero hecho de poplin.",
+                "precio": 25000,
+                "material": "Bengalina",
+                "colores": ["Negro", "Beige", "Gris"],
+                "talles": ["S", "M", "L", "XL"]
             }
         ]
     }
