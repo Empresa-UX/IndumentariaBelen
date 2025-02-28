@@ -1,38 +1,3 @@
-/* Animaciones visibles */
-
-.tooltip {
-    display: none;
-    animation: fadeInOut 2s ease-in-out;
-    position: absolute;
-    background-color: #000;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    z-index: 10;
-}
-
-.tooltip-categorias {
-    top: 66px;
-    left: 8px;
-}
-
-.tooltip-whatsapp {
-    top: 200px;
-    right: 50px;
-}
-
-.tooltip:focus {
-    transform: scale(1.1);
-    /* Efecto de agrandamiento */
-}
-
-/* Visibilidad activa */
-.tooltip.show {
-    display: block;
-    opacity: 1;
-}
-
 /* Animaciones de objetos u otras cosas*/
 
 @keyframes fadeInOut {

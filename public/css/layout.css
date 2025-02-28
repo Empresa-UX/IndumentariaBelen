@@ -105,8 +105,7 @@ header .user-cart img:hover {
     transform: scale(1.1);
 }
 
-/* Pie de página */
-
+/* ---- FOOTER ---- */
 footer {
     background-color: #f8f8f8;
     color: #333;
@@ -115,6 +114,7 @@ footer {
     border-top: 2px solid #ddd;
 }
 
+/* ---- CONTENEDOR PRINCIPAL ---- */
 .footer-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -124,6 +124,7 @@ footer {
     gap: 2rem;
 }
 
+/* ---- SECCIONES ---- */
 .footer-section {
     flex: 1;
     min-width: 200px;
@@ -136,6 +137,7 @@ footer {
     text-transform: uppercase;
 }
 
+/* ---- LISTAS ---- */
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -155,6 +157,7 @@ footer {
     color: #89c66a;
 }
 
+/* ---- REDES SOCIALES ---- */
 .social-media {
     display: flex;
     gap: 1rem;
@@ -170,6 +173,14 @@ footer {
     transform: scale(1.1);
 }
 
+/* ---- TEXTO DE UBICACIÓN ---- */
+.footer-section p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* ---- PIE DE PÁGINA ---- */
 .footer-bottom {
     text-align: center;
     margin-top: 2rem;
@@ -178,4 +189,3 @@ footer {
     font-size: 0.9rem;
     color: #777;
 }
-

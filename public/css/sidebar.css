@@ -2,8 +2,8 @@
 .sidebar {
     position: fixed;
     top: 0;
-    left: -300px;
-    width: 300px;
+    left: -320px; /* Ajustado a 320px */
+    width: 320px; /* 🔹 Sidebar más ancho */
     height: 100%;
     background-color: #ffffff;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
@@ -19,34 +19,49 @@
     left: 0;
 }
 
-/* Título "Categorías" */
+/* Título */
 .sidebar h2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #333;
     padding-bottom: 10px;
     border-bottom: 2px solid #ddd;
 }
 
-/* ---- LISTA DE CATEGORÍAS ---- */
+/* Estilización del scroll (más moderno) */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #333, #666); /* 🔹 Degradado oscuro */
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #555, #777); /* 🔹 Cambio de color en hover */
+}
+
+
+/* Lista de categorías */
 .category-list {
     list-style-type: none;
     padding: 0;
     margin-top: 15px;
 }
 
+/* Categorías principales */
 .category-item {
     font-size: 16px;
     font-weight: 600;
     color: #444;
     padding: 10px 15px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
     border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
 
-/* ---- ENLACES DE CATEGORÍAS ---- */
+/* Enlaces de categorías */
 .category-link {
     text-decoration: none;
     color: black;
@@ -57,6 +72,39 @@
     position: relative;
 }
 
+/* Subcategorías */
+.subcategory-list {
+    list-style: none;
+    padding-left: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out; /* 🔹 Animación al abrir (lenta) */
+}
+
+/* Subcategoría visible */
+.subcategory-list.visible {
+    max-height: 500px; /* Ajustado para expandirse */
+    transition: max-height 0.2s ease-in; /* 🔹 Animación al cerrar (rápida) */
+}
+
+/* Estilo de enlaces de subcategorías */
+.subcategory-link {
+    text-decoration: none;
+    color: #666;
+    display: block;
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Efecto hover */
+.subcategory-link:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+/* Efecto hover para la categoría principal */
 .category-link:hover {
     color: black;
 }
@@ -78,30 +126,3 @@
     left: 0;
 }
 
-/* ---- SUBCATEGORÍAS ---- */
-.subcategory-list {
-    display: none;
-    margin-left: 15px;
-    padding-left: 10px;
-    border-left: 2px solid rgba(85, 85, 85, 0.3);
-}
-
-.subcategory-list.visible {
-    display: block;
-}
-
-.subcategory-item {
-    font-size: 14px;
-    padding: 8px;
-    cursor: pointer;
-}
-
-.subcategory-link {
-    text-decoration: none;
-    color: #666;
-    transition: color 0.3s ease-in-out;
-}
-
-.subcategory-link:hover {
-    color: black;
-}

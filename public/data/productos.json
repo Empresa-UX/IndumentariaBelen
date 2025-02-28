@@ -85,10 +85,10 @@
             {
                 "nombre": "Campera Bengalina Corta",
                 "imagenes": [
-                    "/images/productos/categorias/camperas/bengalina_corto/n (1).jpg",
-                    "/images/productos/categorias/camperas/bengalina_corto/n (2).jpg",
-                    "/images/productos/categorias/camperas/bengalina_corto/n (3).jpg",
-                    "/images/productos/categorias/camperas/bengalina_corto/n (4).jpg"
+                    "/images/productos/categorias/camperas/bengalina corto/n (1).jpg",
+                    "/images/productos/categorias/camperas/bengalina corto/n (2).jpg",
+                    "/images/productos/categorias/camperas/bengalina corto/n (3).jpg",
+                    "/images/productos/categorias/camperas/bengalina corto/n (4).jpg"
                 ],
                 "descripcion": "Versión corta de la campera Bengalina.",
                 "precio": 25000,
@@ -97,7 +97,7 @@
                 "talles": ["S", "M", "L", "XL"]
             }
         ],
-        "Campera rallada": [
+        "Rallada": [
             {
                 "nombre": "Campera Rallada",
                 "imagenes": [
@@ -114,14 +114,13 @@
                 "talles": ["S", "M", "L", "XL"]
             }
         ],
-        "Campera especial": [
+        "Especial": [
             {
-                "nombre": "Campera Rallada",
+                "nombre": "Campera Especial",
                 "imagenes": [
-                    "/images/productos/categorias/camperas/rallada_especial/n (1).jpg",
-                    "/images/productos/categorias/camperas/rallada_especial/n (2).jpg",
-                    "/images/productos/categorias/camperas/rallada_especial/n (3).jpg",
-                    "/images/productos/categorias/camperas/rallada_especial/n (5).jpg"
+                    "/images/productos/categorias/camperas/rallada especial/n (1).jpeg",
+                    "/images/productos/categorias/camperas/rallada especial/n (4).jpeg",
+                    "/images/productos/categorias/camperas/rallada especial/n (2).jpeg"
                 ],
                 "descripcion": "Campera rallada con un diseño más sotisficado.",
                 "precio": 25000,
@@ -130,7 +129,7 @@
                 "talles": ["S", "M", "L", "XL"]
             }
         ],
-        "Campera rompeviento": [
+        "Rompeviento": [
             {
                 "nombre": "Campera Rallada",
                 "imagenes": [
@@ -145,16 +144,15 @@
                 "talles": ["S", "M", "L", "XL"]
             }
         ]
-
     },
     "Cardigan": {
         "Común": [
             {
                 "nombre": "Cardigan Común",
                 "imagenes": [
-                    "/images/productos/categorias/cardigan/n (1).jpg",
-                    "/images/productos/categorias/cardigan/n (2).jpg",
-                    "/images/productos/categorias/cardigan/n (3).jpg"
+                    "/images/productos/categorias/cardigan/n (1).jpeg",
+                    "/images/productos/categorias/cardigan/n (2).jpeg",
+                    "/images/productos/categorias/cardigan/n (3).jpeg"
                 ],
                 "descripcion": "Cardigan suave y elegante para el frío.",
                 "precio": 25000,
@@ -185,9 +183,9 @@
             {
                 "nombre": "Chaleco Inflable",
                 "imagenes": [
-                    "/images/productos/categorias/chalecos/largo/n (1).jpg",
-                    "/images/productos/categorias/chalecos/largo/n (2).jpg",
-                    "/images/productos/categorias/chalecos/largo/n (3).jpg"
+                    "/images/productos/categorias/chalecos/largo/n (1).jpeg",
+                    "/images/productos/categorias/chalecos/largo/n (2).jpeg",
+                    "/images/productos/categorias/chalecos/largo/n (3).jpeg"
                 ],
                 "descripcion": "Chaleco de rallada ancha y una altura especial.",
                 "precio": 25000,
@@ -218,8 +216,8 @@
             {
                 "nombre": "Musculosa Lisa",
                 "imagenes": [
-                    "/images/productos/categorias/musculosas/lisas/n (1).jpg",
-                    "/images/productos/categorias/musculosas/lisas/n (2).jpg"
+                    "/images/productos/categorias/musculosas/lisas/n (1).jpeg",
+                    "/images/productos/categorias/musculosas/lisas/n (2).jpeg"
                 ],
                 "descripcion": "Musculosa en colores lisos para combinar fácilmente.",
                 "precio": 25000,
@@ -262,16 +260,16 @@
             }
         ]
     },
-    "Pantalon": {
+    "Pantalones": {
         "Común": [
             {
-                "nombre": "Pantalón de Jean",
+                "nombre": "Pantalón Común",
                 "imagenes": [
                     "/images/productos/categorias/pantalon/n (1).jpg",
                     "/images/productos/categorias/pantalon/n (3).jpg",
                     "/images/productos/categorias/pantalon/n (4).jpg"
                 ],
-                "descripcion": "Pantalón de jean azul clásico.",
+                "descripcion": "Pantalón Común.",
                 "precio": 25000,
                 "material": "Bengalina",
                 "colores": ["Negro", "Beige", "Gris"],
@@ -279,7 +277,7 @@
             }
         ]
     },
-    "Parka": {
+    "Parkas": {
         "Común": [
             {
                 "nombre": "Parka Común",
@@ -296,9 +294,9 @@
         ],
         "Especial": [
             {
-                "nombre": "Parka Común",
+                "nombre": "Parka Especial",
                 "imagenes": [
-                    "/images/productos/categorias/parka/especial/n (2).jpg"
+                    "/images/productos/categorias/parka/comun/n (2).jpg"
                 ],
                 "descripcion": "Parka especial con retoques.",
                 "precio": 25000,
@@ -309,7 +307,7 @@
         ],
         "Nena": [
             {
-                "nombre": "Parka Común",
+                "nombre": "Parka de Nena",
                 "imagenes": [
                     "/images/productos/categorias/parka/nena/n (1).jpg",
                     "/images/productos/categorias/parka/nena/n (2).jpg"
@@ -323,7 +321,7 @@
         ]
     },
     "Puperas": {
-        "Estampadas": [
+        "Estampada": [
             {
                 "nombre": "Pupera Estampada",
                 "imagenes": [
@@ -339,7 +337,7 @@
                 "talles": ["S", "M", "L", "XL"]
             }
         ],
-        "Lisas": [
+        "Lisa": [
             {
                 "nombre": "Pupera Lisa",
                 "imagenes": [
@@ -373,7 +371,7 @@
             }
         ]
     },
-    "Short": {
+    "Shorts": {
         "Fibrana": [
             {
                 "nombre": "Short de Fibrana",
@@ -394,7 +392,6 @@
             {
                 "nombre": "Short de Satten",
                 "imagenes": [
-                    "/images/productos/categorias/short/satten/n (1).jpg",
                     "/images/productos/categorias/short/satten/n (3).jpg",
                     "/images/productos/categorias/short/satten/n (7).jpg",
                     "/images/productos/categorias/short/satten/n (12).jpg"
@@ -407,7 +404,7 @@
             }
         ]
     },
-    "Tapado": {
+    "Tapados": {
         "Común": [
             {
                 "nombre": "Tapado Común",
